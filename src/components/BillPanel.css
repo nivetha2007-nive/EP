@@ -1,0 +1,80 @@
+.bill-panel {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  height: fit-content;
+}
+
+.bill-panel h2 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.bill-items {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.bill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.3s ease;
+}
+
+.bill-item:last-child {
+  border-bottom: none;
+}
+
+.bill-item.highlight {
+  background-color: rgba(38, 38, 38, 0.05);
+  padding: 14px 12px;
+  margin: 0 -12px;
+  border-radius: var(--radius-md);
+  animation: fadeHighlight 1.5s ease-out;
+}
+
+@keyframes fadeHighlight {
+  0% {
+    background-color: rgba(38, 38, 38, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.item-name {
+  font-size: 16px;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.item-price {
+  font-size: 17px;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.empty-message {
+  text-align: center;
+  color: var(--color-text-secondary);
+  padding: 60px 20px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .bill-panel {
+    padding: 20px;
+  }
+
+  .item-name,
+  .item-price {
+    font-size: 15px;
+  }
+}

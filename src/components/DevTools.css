@@ -1,0 +1,93 @@
+.dev-tools {
+  background: var(--color-bg-light);
+  border: 2px dashed var(--color-border-dark);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-top: 48px;
+}
+
+.dev-tools-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.dev-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-warning);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  letter-spacing: 1px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.dev-warning {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.dev-tools-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.dev-tools-actions button {
+  flex: 1;
+  min-width: 150px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-simulate {
+  background: var(--color-success);
+  color: white;
+}
+
+.btn-simulate:hover:not(:disabled) {
+  background: #059669;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-reset {
+  background: var(--color-danger);
+  color: white;
+}
+
+.btn-reset:hover:not(:disabled) {
+  background: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.dev-tools-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 768px) {
+  .dev-tools {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .dev-tools-actions {
+    flex-direction: column;
+  }
+
+  .dev-tools-actions button {
+    width: 100%;
+    min-width: unset;
+  }
+}

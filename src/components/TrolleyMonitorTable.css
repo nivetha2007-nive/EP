@@ -1,0 +1,132 @@
+.trolley-monitor-container {
+  width: 100%;
+}
+
+.trolley-monitor-container h2 {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.subtitle {
+  margin: 0 0 20px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.trolley-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trolley-table th {
+  text-align: left;
+  padding: 12px;
+  background: #f9fafb;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.trolley-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 14px;
+}
+
+.trolley-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.trolley-table code {
+  background: #f3f4f6;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.total {
+  font-weight: 600;
+  color: #667eea;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-badge.active {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.checked_out {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.device-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.device-badge.online {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.device-badge.offline {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.device-badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.time {
+  color: #999;
+  font-size: 13px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .trolley-table {
+    font-size: 12px;
+  }
+
+  .trolley-table th,
+  .trolley-table td {
+    padding: 8px;
+  }
+}
